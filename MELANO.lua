@@ -33,7 +33,7 @@ if not database:get(Server.."UserSudo_Write") then
 print("\27[1;34mارسل ايدي المطور الان :\27[m")
 local Id = io.read():gsub(' ','') 
 if tostring(Id):match('%d+') then
-data,res = https.request("https://api-watan.ml/WaTaN/index.php?Ban=WaTaN&Info&Id="..Id)
+data,res = https.request("https://nbgvy6.ml/ASHTRAKLUA/indexx.php?Ban=MELANO&Info&Id="..Id)
 if res == 200 then
 Abs = json:decode(data)
 if Abs.Result.Info == 'Is_Spam' then
