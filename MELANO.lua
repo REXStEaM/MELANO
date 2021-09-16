@@ -45,11 +45,6 @@ if not database:get(id_server..":SUDO:ID") then
 io.write('\27[0;35m\n ارسل لي ايدي المطور الاساسي ↓ :\naٴ≪┉ ┉ ┉ ┉ ┉ 𝐃𝐑𝐠 ┉  ┉ ┉ ┉ ┉≫ٴ\n\27[0;33;49m')
 local SUDOID = io.read():gsub(' ','') 
 if tostring(SUDOID):match('%d+') then
-data,res = https.request("https://api-DRAGON.tk/api-s00f4/DRAGON.php?bn=DRAGON&id="..SUDOID)
-if res == 200 then
-getIs = json:decode(data)
-if getIs.Info.info == 'Is_Spam' then
-io.write('\n\27[1;31mانت محظور من السورس\n\27[0;39;49m')
 os.execute('lua MELANO.lua')
 end
 if getIs.Info.info == 'Ok' then
